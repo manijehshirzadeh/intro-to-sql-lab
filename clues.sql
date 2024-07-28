@@ -31,9 +31,12 @@ SELECT cities.name, cities.countrycode
 FROM cities
 INNER JOIN countries ON cities.name=countries.name;
 
--- Clue #5: Oh no, she pulled a switch – there are two cities with very similar names, but in totally different parts of the globe! She's headed to South America as we speak; go find a city whose name is like the one we were headed to, but doesn't end the same. Find out the city, and do another search for what country it's in. Hurry!
+-- Clue #5: Oh no, she pulled a switch – there are two cities with very similar names, but in totally different parts of the globe! 
+-- She's headed to South America as we speak; go find a city whose name is like the one we were headed to, but doesn't end the same. 
+-- Find out the city, and do another search for what country it's in. Hurry!
 
 -- Write SQL query here
+SELECT name  FROM cities WHERE name LIKE 'Serra%' LIMIT 1;
 
 
 -- Clue #6: We're close! Our South American agent says she just got a taxi at the airport, and is headed towards
